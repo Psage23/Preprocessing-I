@@ -49,11 +49,59 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Source Code Pro', monospace;
+	max-width: 100%;
+	padding:0;
+	margin:0;
 }
 
 html, body {
     height: 100%;
 }
+
+html{
+	font-size:62.5%;
+}
+
+body{
+	line-height:2;
+	font-size:1.5rem;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing:3px;
+	padding:4% 0;
+}
+
+nav {
+	padding: 2% 0 2% 0;
+	font-size: 20px;
+}
+
+nav div {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	width: 70%;
+}
+	nav a {
+	text-decoration: none;
+	color: grey;
+	}
+
+	
 
