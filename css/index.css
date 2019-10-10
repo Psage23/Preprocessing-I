@@ -220,11 +220,11 @@ nav a {
 }
 section {
   background-color: lightgrey;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  /*margin: 20px;
+  /*display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-content: center;
+	/*margin: 20px;
 	padding: 20px;*/
   width: 100%;
 }
@@ -237,7 +237,4 @@ section {
 }
 .skills h2 {
   text-decoration: underline;
-}
-.WorkHistory {
-  width: 50%;
 }
