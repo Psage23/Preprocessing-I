@@ -197,8 +197,12 @@ nav a {
 	width: 100%;
 	height: 80vh;
 }*/
-.mixin-class {
+.top #WorkHistory {
   font-style: bold;
+}
+.mixin-class {
+  background-color: slategrey;
+  text-align: center;
 }
 .top {
   background-color: slategrey;
@@ -248,8 +252,11 @@ section {
 li {
   list-style-type: cirle;
 }
+#WorkHistory {
+  padding: 5px 10px;
+}
 table {
-  margin: 10px;
+  /*margin: 10px;*/
 }
 th {
   background-color: #0d4869;
