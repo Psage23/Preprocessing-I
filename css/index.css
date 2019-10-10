@@ -204,6 +204,9 @@ nav a {
   background-color: slategrey;
   text-align: center;
 }
+.mixin-id {
+  padding: 5px 10px;
+}
 .top {
   background-color: slategrey;
   text-align: center;
