@@ -130,35 +130,35 @@ nav a {
 .top{
 	background-color: @background-color;
 	text-align: center;
-}
 
-.top h1{
+	h1{
 	/*font-style: bold;*/
 	font-size: 40px;
 	margin: 0;
 	padding: 0;
-}
+	}//closes h1
 
-.top h2 {
+	h2 {
 	font-size: 25px;
 	/*font-style: bold;*/
 	margin: 0;
 	padding: 0;
-}
+	}//closes h2
+}//closes class top
 
 .Intro {
 	text-align: center;
 	margin: 15px 55px 0;
-}
 
-.Intro button {
+	button {
 	background-color: teal;
 	color: white;
 	border: 2px solid black;
 	font-size: 15px;
 	margin: 15px;
 	padding: 5px;
-}
+	}//this closes button
+}//this closes Intro class
 
 section {
 	background-color: @background-color;
@@ -174,45 +174,42 @@ section {
 .skills {
 	font-size: 20px;
 	margin: 0 40px;
-}
 
-.skills h2 {
+	h2 {
 	text-decoration: underline;
-}
+	}//this closes h2
 
-li {
+	li {
 	list-style-type: cirle;
-}
+	}//this closes li
+}//this closes skills class
 
 #WorkHistory {
 	padding: 5px 10px;
-}
 
-table {
-	/*margin: 10px;*/
-}
+	th {
+		background-color: rgb(13, 72, 105);
+		color: white;
+		height: 50px;
+		text-align: center;
+	}//this closes th
 
-th {
-	background-color: rgb(13, 72, 105);
-	color: white;
-	height: 50px;
-	text-align: center;
-}
+	td {
+		text-align: center;
+		vertical-align: bottom;
+	}//this closes td
 
-td {
-	text-align: center;
-	vertical-align: bottom;
-}
+	tr:nth-child(even) {
+		background-color: lightsteelblue;
+	}//this closes tr
+}//this closes WorkHistory id
 
-tr:nth-child(even) {
-	background-color: lightsteelblue;
-}
 
 .ContactInfo {
 	background-color: black;
 	color: white;
 
-	.h3 {
+	h3 {
 		display: block;
 		text-align: center;
 	}

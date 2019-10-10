@@ -204,8 +204,33 @@ nav a {
   background-color: slategrey;
   text-align: center;
 }
+.mixin-class h1 {
+  /*font-style: bold;*/
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+.mixin-class h2 {
+  font-size: 25px;
+  /*font-style: bold;*/
+  margin: 0;
+  padding: 0;
+}
 .mixin-id {
   padding: 5px 10px;
+}
+.mixin-id th {
+  background-color: #0d4869;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+.mixin-id td {
+  text-align: center;
+  vertical-align: bottom;
+}
+.mixin-id tr:nth-child(even) {
+  background-color: lightsteelblue;
 }
 .top {
   background-color: slategrey;
@@ -252,33 +277,30 @@ section {
 .skills h2 {
   text-decoration: underline;
 }
-li {
+.skills li {
   list-style-type: cirle;
 }
 #WorkHistory {
   padding: 5px 10px;
 }
-table {
-  /*margin: 10px;*/
-}
-th {
+#WorkHistory th {
   background-color: #0d4869;
   color: white;
   height: 50px;
   text-align: center;
 }
-td {
+#WorkHistory td {
   text-align: center;
   vertical-align: bottom;
 }
-tr:nth-child(even) {
+#WorkHistory tr:nth-child(even) {
   background-color: lightsteelblue;
 }
 .ContactInfo {
   background-color: black;
   color: white;
 }
-.ContactInfo .h3 {
+.ContactInfo h3 {
   display: block;
   text-align: center;
 }
