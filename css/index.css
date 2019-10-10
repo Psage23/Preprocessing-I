@@ -301,7 +301,7 @@ section {
   color: white;
 }
 .ContactInfo h3 {
-  display: block;
+  /*display: block;*/
   text-align: center;
 }
 .ContactInfo address {
