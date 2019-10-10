@@ -254,3 +254,14 @@ td {
 tr:nth-child(even) {
   background-color: lightsteelblue;
 }
+.ContactInfo {
+  background-color: black;
+  color: white;
+}
+.ContactInfo .h3 {
+  text-align: center;
+}
+.ContactInfo address {
+  display: block;
+  text-align: center;
+}
