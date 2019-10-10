@@ -302,6 +302,7 @@ section {
 }
 .ContactInfo h3 {
   text-align: center;
+  text-decoration: underline;
 }
 .ContactInfo address {
   display: block;
