@@ -229,12 +229,28 @@ section {
   width: 100%;
 }
 .skills {
-  border: 1px solid black;
   font-size: 20px;
-  padding: 20px;
-  /*width: 100%;*/
-  height: auto;
+  margin: 0 40px;
 }
 .skills h2 {
   text-decoration: underline;
+}
+li {
+  list-style-type: cirle;
+}
+table {
+  width: 100%;
+}
+th {
+  background-color: #0d4869;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+td {
+  text-align: center;
+  vertical-align: bottom;
+}
+tr:nth-child(even) {
+  background-color: lightsteelblue;
 }
