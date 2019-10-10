@@ -50,6 +50,10 @@ table {
 
 /* Set every element's box-sizing to border-box */
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+@main-font:'PT Sans', sans-serif;
+@background-color: slategrey;
 
 * {
 	box-sizing: border-box;
@@ -70,11 +74,11 @@ html{
 body{
 	line-height:2;
 	font-size:1.5rem;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: @main-font;
 }
 
 h1, h2, h3, h4{
-	font-family: 'Fjalla One', sans-serif;
+	font-family: @main-font;
 	letter-spacing:3px;
 	padding:4% 0;
 }
@@ -112,13 +116,18 @@ nav a {
 	height: 80vh;
 }*/
 
+
+.mixin-class {
+	font-style: bold;
+}
+
 .top{
-	background-color: lightgrey;
+	background-color: @background-color;
 	text-align: center;
 }
 
 .top h1{
-	font-style: bold;
+	/*font-style: bold;*/
 	font-size: 40px;
 	margin: 0;
 	padding: 0;
@@ -126,7 +135,7 @@ nav a {
 
 .top h2 {
 	font-size: 25px;
-	font-style: bold;
+	/*font-style: bold;*/
 	margin: 0;
 	padding: 0;
 }
@@ -146,7 +155,7 @@ nav a {
 }
 
 section {
-	background-color: lightgrey;
+	background-color: @background-color;
 	/*display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -194,6 +203,7 @@ tr:nth-child(even) {
 	color: white;
 
 	.h3 {
+		display: block;
 		text-align: center;
 	}
 

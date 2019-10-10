@@ -134,6 +134,13 @@ table {
   font-display: swap;
   src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
   font-family: 'Source Code Pro', monospace;
@@ -151,13 +158,13 @@ html {
 body {
   line-height: 2;
   font-size: 1.5rem;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   letter-spacing: 3px;
   padding: 4% 0;
 }
@@ -190,19 +197,22 @@ nav a {
 	width: 100%;
 	height: 80vh;
 }*/
+.mixin-class {
+  font-style: bold;
+}
 .top {
-  background-color: lightgrey;
+  background-color: slategrey;
   text-align: center;
 }
 .top h1 {
-  font-style: bold;
+  /*font-style: bold;*/
   font-size: 40px;
   margin: 0;
   padding: 0;
 }
 .top h2 {
   font-size: 25px;
-  font-style: bold;
+  /*font-style: bold;*/
   margin: 0;
   padding: 0;
 }
@@ -219,7 +229,7 @@ nav a {
   padding: 5px;
 }
 section {
-  background-color: lightgrey;
+  background-color: slategrey;
   /*display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -259,6 +269,7 @@ tr:nth-child(even) {
   color: white;
 }
 .ContactInfo .h3 {
+  display: block;
   text-align: center;
 }
 .ContactInfo address {
