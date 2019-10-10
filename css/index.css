@@ -1,1 +1,315 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 2;
+  font-size: 1.5rem;
+  font-family: 'PT Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 3px;
+  padding: 4% 0;
+}
+nav {
+  padding: 2% 0 2% 0;
+  font-size: 16px;
+}
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  /*flex-wrap: nowrap;*/
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+/*.ProfilePic img {
+	border-radius: 60px;
+	background-position: center;
+	background-repeat: repeat;
+	padding: 10px;
+	width: 100%;
+	height: 80vh;
+}*/
+.top #WorkHistory {
+  font-style: bold;
+}
+.mixin-class {
+  background-color: slategrey;
+  text-align: center;
+}
+.mixin-class h1 {
+  /*font-style: bold;*/
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+.mixin-class h2 {
+  font-size: 25px;
+  /*font-style: bold;*/
+  margin: 0;
+  padding: 0;
+}
+.mixin-id {
+  padding: 5px 10px;
+}
+.mixin-id th {
+  background-color: #0d4869;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+.mixin-id td {
+  text-align: center;
+  vertical-align: bottom;
+}
+.mixin-id tr:nth-child(even) {
+  background-color: lightsteelblue;
+}
+.top {
+  background-color: slategrey;
+  text-align: center;
+}
+.top h1 {
+  /*font-style: bold;*/
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+.top h2 {
+  font-size: 25px;
+  /*font-style: bold;*/
+  margin: 0;
+  padding: 0;
+}
+.Intro {
+  text-align: center;
+  margin: 15px 55px 0;
+}
+.Intro button {
+  background-color: teal;
+  color: white;
+  border: 2px solid black;
+  font-size: 15px;
+  margin: 15px;
+  padding: 5px;
+}
+section {
+  background-color: slategrey;
+  /*display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-content: center;
+	/*margin: 20px;
+	padding: 20px;*/
+  width: 100%;
+}
+.skills {
+  font-size: 20px;
+  margin: 0 40px;
+}
+.skills h2 {
+  text-decoration: underline;
+}
+.skills li {
+  list-style-type: cirle;
+}
+@media (max-width: 500px) {
+  .skills {
+    background-color: grey;
+  }
+}
+#WorkHistory {
+  padding: 5px 10px;
+}
+#WorkHistory th {
+  background-color: #0d4869;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+#WorkHistory td {
+  text-align: center;
+  vertical-align: bottom;
+}
+#WorkHistory tr:nth-child(even) {
+  background-color: lightsteelblue;
+}
+.ContactInfo {
+  background-color: black;
+  color: white;
+}
+.ContactInfo h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.ContactInfo address {
+  display: block;
+  text-align: center;
+}

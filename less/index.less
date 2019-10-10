@@ -49,11 +49,181 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+@main-font:'PT Sans', sans-serif;
+@background-color: slategrey;
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Source Code Pro', monospace;
+	max-width: 100%;
+	padding:0;
+	margin:0;
 }
 
 html, body {
     height: 100%;
 }
+
+html{
+	font-size:62.5%;
+}
+
+body{
+	line-height:2;
+	font-size:1.5rem;
+	font-family: @main-font;
+}
+
+h1, h2, h3, h4{
+	font-family: @main-font;
+	letter-spacing:3px;
+	padding:4% 0;
+}
+
+nav {
+	padding: 2% 0 2% 0;
+	font-size: 16px;
+}
+
+nav div {
+	display: flex;
+	justify-content: space-evenly;
+	/*flex-wrap: nowrap;*/
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+/*.ProfilePic img {
+	border-radius: 60px;
+	background-position: center;
+	background-repeat: repeat;
+	padding: 10px;
+	width: 100%;
+	height: 80vh;
+}*/
+.top #WorkHistory {
+	font-style: bold;
+}
+
+.mixin-class {
+	.top();
+}
+
+.mixin-id {
+	#WorkHistory();
+}
+
+.top{
+	background-color: @background-color;
+	text-align: center;
+
+	h1{
+	/*font-style: bold;*/
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	}//closes h1
+
+	h2 {
+	font-size: 25px;
+	/*font-style: bold;*/
+	margin: 0;
+	padding: 0;
+	}//closes h2
+}//closes class top
+
+.Intro {
+	text-align: center;
+	margin: 15px 55px 0;
+
+	button {
+	background-color: teal;
+	color: white;
+	border: 2px solid black;
+	font-size: 15px;
+	margin: 15px;
+	padding: 5px;
+	}//this closes button
+}//this closes Intro class
+
+section {
+	background-color: @background-color;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-content: center;
+	/*margin: 20px;
+	padding: 20px;*/
+	width: 100%;
+}
+
+.skills {
+	font-size: 20px;
+	margin: 0 40px;
+
+	h2 {
+	text-decoration: underline;
+	}//this closes h2
+
+	li {
+	list-style-type: cirle;
+	}//this closes li
+
+	@media (max-width: 500px) {
+	background-color: grey;
+}
+}//this closes skills class
+
+
+
+#WorkHistory {
+	padding: 5px 10px;
+
+	th {
+		background-color: rgb(13, 72, 105);
+		color: white;
+		height: 50px;
+		text-align: center;
+	}//this closes th
+
+	td {
+		text-align: center;
+		vertical-align: bottom;
+	}//this closes td
+
+	tr:nth-child(even) {
+		background-color: lightsteelblue;
+	}//this closes tr
+}//this closes WorkHistory id
+
+
+.ContactInfo {
+	background-color: black;
+	color: white;
+
+	h2 {
+		text-align: center;
+		text-decoration: underline;
+	}// this closes h2
+
+	address {
+		display: block;
+		text-align: center;
+	}//this closes address
+}//this closes ContactInfo
+
 
