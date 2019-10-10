@@ -280,6 +280,11 @@ section {
 .skills li {
   list-style-type: cirle;
 }
+@media (max-width 500px) {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 #WorkHistory {
   padding: 5px 10px;
 }
