@@ -239,7 +239,7 @@ li {
   list-style-type: cirle;
 }
 table {
-  width: 80%;
+  margin: 10px;
 }
 th {
   background-color: #0d4869;
