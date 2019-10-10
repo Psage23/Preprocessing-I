@@ -182,3 +182,17 @@ nav a {
   text-decoration: none;
   color: grey;
 }
+.ProfilePic img {
+  border-radius: 60px;
+  background-position: right top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+}
+.top {
+  background-color: yellow;
+  text-align: center;
+  font-style: bold;
+  font-size: 70px;
+}
